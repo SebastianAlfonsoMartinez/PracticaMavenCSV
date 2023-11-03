@@ -71,4 +71,16 @@ public class Product {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+
+    @Override
+    public String toString() {
+        return "\nProduct: \n" +
+                "name: " + name + '\n' +
+                "description:" + description + '\n' +
+                "category: " + category + '\n' +
+                "tags: " + tags + '\n' +
+                "price: " + price + "\n" +
+                "imageUrl: " + imageUrl +
+                "\n=========================================================\n";
+    }
 }
